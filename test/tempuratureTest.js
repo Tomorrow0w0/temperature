@@ -1,12 +1,20 @@
 var expect = require('chai').expect
-describe('溫度換算', function() {
-    var M = require('../lib/溫度換算')
+describe('TChange', function() {
+    var N = require('../lib/TChange')
  
-
     describe('CtoF測試', function () {
-        it('M.convert(寫一個函數將攝氏to華氏)', function () {
-          expect(M.convert(50)).to.equal(122)
+        it('N.CtoF(寫一個函數將攝氏to華氏)', function () {
+          expect(N.CtoF(50)).to.equal(122)
         })
       })
 
+      
+        describe('FtoC測試', function () {
+            it('N.FtoC(寫一個函數將華氏to攝氏)', function () {
+              expect(N.FtoC(122)).to.equal(50)
+            })
+          })
+
 });
+
+
